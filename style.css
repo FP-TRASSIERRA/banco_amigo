@@ -1,0 +1,372 @@
+*{
+    margin-top: 1px;
+}
+header{
+height: auto;}
+.zona1{
+    display: flex;
+    font-family: poppins;
+    justify-content: center;
+    gap: 15px;
+    width: 1fr;
+    margin-top: 15px;
+}
+.zona2{display: flex;
+    justify-content: center;
+    align-items: center;
+width: 1fr;
+height: auto;
+}
+
+.formulario{
+            flex-direction: column;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: auto;
+            gap: 5px;
+            margin-top: 5px; 
+            color: #007550;
+}
+ 
+.navmenu{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 10px;
+            list-style: none;
+            margin-top: auto;
+}
+
+    label{display: none;
+    justify-content: start;
+    font-size: 30px;
+}
+.toggle-menu{
+    font-size: 30px;
+    border: none;
+    background-color: white;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;    
+} 
+a:link, a:visited, a:active {
+    text-decoration:none;
+color: black;
+font-family: poppins;}
+    
+    /*primer bloque
+    Realizo responsive con flex-wrap de forma automatica*/
+.contenedor1{
+    background: radial-gradient(circle, #007550, #36BD59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    min-width: none;
+    border-top: 1rem;
+    }
+
+.imgpromo{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px 
+}
+
+.promocion{
+    display: grid;
+    color: white;
+    margin-left: 0px;
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
+
+.BA{
+    display: flex;
+    font-size: 40px;
+    font-family: Lora;
+    justify-items: center;
+    align-content: center;
+}
+
+.textpromo{ 
+    font-family: Lora;
+justify-content: center;
+align-items: center;
+font-size: larger;
+}
+
+
+/*Familia de promocion*/
+.tree {
+    font-family: 'Lora', serif;
+    word-spacing: 15px;
+    font-size: 20px;  
+    margin: 5px ;}
+
+/*responsive con la linea grid-template columns en 600px */
+.conteiner2{
+    margin: 20px;
+    display: grid;
+    place-content: center;
+    }
+
+.familia{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill, minmax(250px, 1fr));
+    place-content: center;
+    gap: 20px;
+    width: 1fr;
+    }
+
+.card{
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,.75);;
+    display: grid;
+    width: auto;
+    grid-auto-rows: 8rem
+ }
+.card :first-child{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.card :first-child :hover {
+    color: #007550 ;
+}
+/*contenedor3 Zona informativa*/
+.cont3{
+    align-items: center;
+    background-color: #F7FFFA;
+    margin: 0;
+}
+.container3{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.tabla1{
+    width: 1fr;
+}
+table,th, td{ 
+    border: 1px solid black;
+    margin: 5px;
+    border-collapse: collapse;
+    width: 300px;
+    justify-content: center;
+}
+.info{
+    font-family: lora ;
+    font-size: 25px;
+}
+.imgt{
+    text-align: center;}
+    
+
+.ss{
+    padding: 5px;
+    
+}
+.ss figure{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.ss figure img{
+    transition: all 500ms ease-out;
+    max-width: 100%;
+}
+.ss figure .capa{ 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(242, 251, 245, 0.8);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    max-width: 100%;
+}
+
+.ss figure:hover>.capa{opacity: 1;
+visibility: visible;
+}
+.capa{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: poppins;
+    font-size: larger;
+    color: black;
+    max-width: 100%;}
+.foot{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+list-style: none;
+margin-top: auto;
+}
+
+.foot:hover{
+color: black;
+font-family: poppins;    
+}
+
+.pie1{display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 20px;}
+
+.pie2 a{
+letter-spacing: 2px;
+color: black;
+font-size: 1.5rem;
+
+justify-content: center;
+gap: 20px;
+}
+.pie2 a:after{
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 100%;
+background: black;
+transform-origin: right;
+transform: scaleX(0);
+transition: tranform 0.2ms ease-in-out;
+}
+.pie2 a:hover:after{
+transform-origin: left;
+transform: scaleX(1);
+}
+
+/*pagina de promocion */
+.promociones{display: grid;
+background-color: whitesmoke;
+margin: 0;}
+.nav-menu{
+    display: flex;
+    font-size: 20px;
+    padding: 0;
+    background-color: #36BD59;
+    width: 100%;
+    justify-content: center;
+    margin-right: 100px;    
+    gap: 3rem;
+    list-style: none;
+    margin-top: auto;
+}
+nav .nav-menu a{ color: white;}
+
+.contedor-promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 0.5fr 3fr;
+height: auto;
+    }
+.parapromo{width: 16rem;}
+.subzona1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    border: 1px solid black;
+    margin: 0.6em auto;
+}
+.carpromo{width: 250px;
+    border: 1px solid #36BD59;
+    border-radius: 10px;
+    margin: 0 2.6em;
+    justify-content: center;
+    text-align: center;
+}
+.carpromo-text{
+    font-family: poppins;
+}
+.img-carpromo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    }
+.subzona2{
+    display:grid;
+    background-color: seashell;
+    margin: 0;
+}  
+
+@media (max-width:810px){
+    .zona2{justify-content: space-between;
+    margin:0 0 0 12rem;
+align-items: start;}
+    .ss{justify-content: center;
+        align-items: center;
+    padding: 0px;
+margin: 5px;
+width: 100%;
+    }
+.nav-menu{position: fixed;
+width: 100%;
+padding: 0;
+height: calc(100% - 80px);
+text-align: center;
+background-color: #007550;
+transform: translateY(1);
+transition: 0.3s;
+left: 0;
+overflow-y: auto;
+}
+nav .navmenu a{ color: white;}  
+
+.nav-menu-link{padding: 1em;
+font-size: 25px;}
+.nav-menu{display: none;
+        }
+input:checked ~ .nav-menu { display: block;
+}
+.navmenu{position: fixed;
+    width: 100%;
+    padding: 0;
+    height: calc(100% - 80px);
+    text-align: center;
+    background-color: #007550;
+    transform: translateY(1);
+    transition: 0.3s;
+    left: 0;
+    overflow-y: auto;
+    }
+    nav .nav-menu a{ color: white;} 
+    
+    .navmenu{display: none;
+            }
+    input:checked ~ .navmenu { display: block;
+    }   
+
+label{display: block;
+display: flex;
+text-align: start;}
+.ssi{width: 80%;}
+
+
+.tabla1{display: none;}
+.recordar{color: black;}
+}
+/*media de la pagina promo*/
+
+.promociones{
+    display: grid;
+    font-family: Poppin;
+}
