@@ -309,7 +309,7 @@ height: auto;
 }  
 
 @media (max-width:810px){
-    .zona2{justify-content: space-between;
+    .zona2{justify-content: center;
     margin:0 0 0 12rem;
 align-items: start;}
     .ss{justify-content: center;
