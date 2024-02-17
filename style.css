@@ -10,7 +10,6 @@ height: auto;}
     gap: 15px;
     width: 1fr;
     margin-top: 15px;
-    background-color: red;
 }
 .zona2{display: flex;
     justify-content: center;
