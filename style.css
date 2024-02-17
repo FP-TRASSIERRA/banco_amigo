@@ -312,7 +312,8 @@ height: auto;
     .zona2{justify-content: center;
     margin:0 0 0 12rem;
     text-align: center;
-align-items: start;}
+align-items: start;
+background-color: red;}
     .ss{justify-content: center;
         align-items: center;
     padding: 0px;
